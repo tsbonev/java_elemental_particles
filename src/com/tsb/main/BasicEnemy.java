@@ -30,13 +30,13 @@ public class BasicEnemy extends GameObject {
 
         if(x <= 0 || x >= Game.WIDTH) velX *= -1;
 
-        handler.addObject(new ScatteredTrail(x, y, ID.Trail, handler, Color.red,16, 16, 0.02f));
+        handler.addObject(new ScatteredTrail(x, y, ID.Trail, handler, new Color( 255, 83, 48),16, 16, 0.02f, true));
 
     }
 
     public void render(Graphics g) {
 
-        g.setColor(Color.red);
+        g.setColor(new Color(255, 83, 48));
         g.fillRect(x, y, 16, 16);
 
     }

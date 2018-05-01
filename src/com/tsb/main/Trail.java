@@ -6,7 +6,7 @@ import java.util.Random;
 public class Trail extends GameObject {
 
     protected float alpha = 1;
-    private Handler handler;
+    protected Handler handler;
     protected Color color;
     private int width, height;
     float life;

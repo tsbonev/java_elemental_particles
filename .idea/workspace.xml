@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="309e2d9c-de4f-41c3-bb26-3f4d76d25e1a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_game_tutorial/com/tsb/main/BasicEnemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_game_tutorial/com/tsb/main/BasicEnemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_game_tutorial/com/tsb/main/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_game_tutorial/com/tsb/main/GameObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_game_tutorial/com/tsb/main/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_game_tutorial/com/tsb/main/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tsb/main/BasicEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tsb/main/BasicEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tsb/main/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tsb/main/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tsb/main/KeyInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tsb/main/KeyInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tsb/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tsb/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tsb/main/ScatteredTrail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tsb/main/ScatteredTrail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tsb/main/Trail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tsb/main/Trail.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/tsb/main/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="114" column="22" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
+            <state relative-caret-position="682">
+              <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,8 +37,8 @@
       <file leaf-file-name="Trail.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tsb/main/Trail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="176">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1417#1418#0" expanded="true" />
@@ -52,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScatteredTrail.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScatteredTrail.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tsb/main/ScatteredTrail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state relative-caret-position="239">
+              <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,8 +63,8 @@
       <file leaf-file-name="BasicEnemy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tsb/main/BasicEnemy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="32" column="79" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="79" />
+            <state relative-caret-position="539">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,7 +113,7 @@
       <file leaf-file-name="GameObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tsb/main/GameObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="99">
               <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -176,13 +172,13 @@
         <option value="$PROJECT_DIR$/src/com/tsb/main/Window.java" />
         <option value="$PROJECT_DIR$/src/com/tsb/main/HUD.java" />
         <option value="$PROJECT_DIR$/src/com/tsb/main/ID.java" />
-        <option value="$PROJECT_DIR$/src/com/tsb/main/Game.java" />
         <option value="$PROJECT_DIR$/src/com/tsb/main/Player.java" />
         <option value="$PROJECT_DIR$/src/com/tsb/main/KeyInput.java" />
         <option value="$PROJECT_DIR$/src/com/tsb/main/GameObject.java" />
-        <option value="$PROJECT_DIR$/src/com/tsb/main/BasicEnemy.java" />
         <option value="$PROJECT_DIR$/src/com/tsb/main/Trail.java" />
         <option value="$PROJECT_DIR$/src/com/tsb/main/ScatteredTrail.java" />
+        <option value="$PROJECT_DIR$/src/com/tsb/main/BasicEnemy.java" />
+        <option value="$PROJECT_DIR$/src/com/tsb/main/Game.java" />
       </list>
     </option>
   </component>
@@ -300,17 +296,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="-4" width="1859" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="16" weight="0.32924336" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.32889345" />
       <window_info anchor="right" id="Palette&#9;" order="14" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19159836" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19159836" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="13" />
@@ -320,7 +315,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.398773" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39856556" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="right" id="Palette" order="8" />
       <window_info id="Designer" order="8" />
@@ -349,13 +344,42 @@
       <window_info anchor="right" id="Maven Projects" order="12" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.17643894" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32974717" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19120654" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17643894" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="6" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398773" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32924336" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -731,16 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tsb/main/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/awt/event/KeyAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -762,7 +776,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tsb/main/GameObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="99">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -776,30 +790,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tsb/main/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="114" column="22" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tsb/main/BasicEnemy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="32" column="79" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tsb/main/Trail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="176">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1417#1418#0" expanded="true" />
@@ -808,10 +802,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tsb/main/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tsb/main/ScatteredTrail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="239">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tsb/main/BasicEnemy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tsb/main/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
