@@ -28,23 +28,11 @@ public class Player extends GameObject {
         x = Game.clamp(x, 0, Game.WIDTH -32);
         y = Game.clamp(y, 0, Game.HEIGHT - 32);
 
-        handler.addObject(new Trail(x, y, ID.Trail, handler, Color.white,32, 32, 0.04f));
-
         collision();
 
     }
 
     private void collision(){
-        for (int i = 0; i < handler.object.size(); i++){
-            GameObject tempObject = handler.object.get(i);
-
-            if(tempObject.getId() == ID.BasicEnemy){
-                if(getBounds().intersects(tempObject.getBounds())){
-                    HUD.HEALTH -= 2;
-                }
-            }
-
-        }
     }
 
     public void render(Graphics g) {
