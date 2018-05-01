@@ -1,6 +1,7 @@
 package com.tsb.main;
 
 import java.awt.*;
+import java.util.Random;
 
 public class BasicEnemy extends GameObject {
 
@@ -29,7 +30,7 @@ public class BasicEnemy extends GameObject {
 
         if(x <= 0 || x >= Game.WIDTH) velX *= -1;
 
-        handler.addObject(new Trail(x, y, ID.Trail, handler, Color.red,16, 16, 0.02f));
+        handler.addObject(new ScatteredTrail(x, y, ID.Trail, handler, Color.red,16, 16, 0.02f));
 
     }
 

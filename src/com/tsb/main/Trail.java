@@ -1,17 +1,19 @@
 package com.tsb.main;
 
 import java.awt.*;
+import java.util.Random;
 
 public class Trail extends GameObject {
 
-    private float alpha = 1;
+    protected float alpha = 1;
     private Handler handler;
-    private Color color;
+    protected Color color;
     private int width, height;
     float life;
 
     public Trail(int x, int y, ID id, Handler handler, Color color, int width, int height, float life){
-        super(x, y, id);
+        super(x , y, id);
+
         this.handler = handler;
         this.color = color;
         this.width = width;

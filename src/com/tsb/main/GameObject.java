@@ -1,6 +1,7 @@
 package com.tsb.main;
 
 import java.awt.*;
+import java.util.Random;
 
 public abstract class GameObject {
 
@@ -58,7 +59,7 @@ public abstract class GameObject {
     }
 
     public void setVelY(int velY){
-        this.velY = velY;
+            this.velY = velY;
     }
 
     //endregion
