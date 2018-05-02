@@ -25,6 +25,7 @@ public class Game extends Canvas implements Runnable {
         handler = new Handler();
 
         this.addKeyListener(new KeyInput(handler));
+        this.addMouseListener(new MouseInput(handler));
 
         new Window(WIDTH, HEIGHT, "Let's build a game", this);
 
@@ -34,10 +35,6 @@ public class Game extends Canvas implements Runnable {
 
 
         handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player, handler));
-        handler.addObject(new BasicEnemy(r.nextInt(WIDTH), r.nextInt(HEIGHT), ID.BasicEnemy, handler));
-        handler.addObject(new BasicEnemy(r.nextInt(WIDTH), r.nextInt(HEIGHT), ID.BasicEnemy, handler));
-        handler.addObject(new BasicEnemy(r.nextInt(WIDTH), r.nextInt(HEIGHT), ID.BasicEnemy, handler));
-        handler.addObject(new BasicEnemy(r.nextInt(WIDTH), r.nextInt(HEIGHT), ID.BasicEnemy, handler));
 
     }
 

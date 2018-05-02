@@ -4,7 +4,6 @@ import java.util.*;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.security.Key;
 
 public class KeyInput extends KeyAdapter {
 
@@ -23,18 +22,21 @@ public class KeyInput extends KeyAdapter {
 
         if (key == KeyEvent.VK_W) {
             keysDown.put("W", true);
+            movePlayer();
         }
         if (key == KeyEvent.VK_A) {
             keysDown.put("A", true);
+            movePlayer();
         }
         if (key == KeyEvent.VK_S) {
             keysDown.put("S", true);
+            movePlayer();
         }
         if (key == KeyEvent.VK_D) {
             keysDown.put("D", true);
+            movePlayer();
         }
 
-        movePlayer();
 
         if (key == KeyEvent.VK_ESCAPE) System.exit(1);
 

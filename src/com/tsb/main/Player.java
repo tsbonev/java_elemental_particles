@@ -1,6 +1,7 @@
 package com.tsb.main;
 
 import java.awt.*;
+import java.io.Console;
 import java.util.Random;
 
 public class Player extends GameObject {
@@ -40,6 +41,7 @@ public class Player extends GameObject {
             if(tempObject.getId() == ID.BasicEnemy){
                 if(getBounds().intersects(tempObject.getBounds())){
                     HUD.HEALTH -= 5;
+                    if(HUD.HEALTH < 1) System.out.println("Game over");
                 }
             }
 
