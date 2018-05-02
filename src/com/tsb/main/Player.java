@@ -8,11 +8,9 @@ public class Player extends GameObject {
     private Random r = new Random();
     private Handler handler;
 
-
     public Player(int x, int y, ID id, Handler handler){
         super(x, y, id);
         this.handler = handler;
-
     }
 
 
@@ -25,7 +23,7 @@ public class Player extends GameObject {
         x += velX;
         y += velY;
 
-        x = Game.clamp(x, 0, Game.WIDTH -32);
+        x = Game.clamp(x, 0, Game.WIDTH - 32);
         y = Game.clamp(y, 0, Game.HEIGHT - 32);
 
         handler.addObject(new Trail(this.x, this.y, ID.Trail,
@@ -41,7 +39,7 @@ public class Player extends GameObject {
 
             if(tempObject.getId() == ID.BasicEnemy){
                 if(getBounds().intersects(tempObject.getBounds())){
-                    HUD.HEALTH -= 2;
+                    HUD.HEALTH -= 5;
                 }
             }
 

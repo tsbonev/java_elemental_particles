@@ -25,6 +25,7 @@ public class BasicEnemy extends GameObject {
     }
 
     public void tick() {
+
         x += velX;
         y += velY;
 

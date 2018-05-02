@@ -1,13 +1,19 @@
 package com.tsb.main;
 
+import java.util.*;
+
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.security.Key;
 
 public class KeyInput extends KeyAdapter {
 
     private Handler handler;
 
-    public KeyInput(Handler handler){
+    public Map keysDown = new HashMap<String, Boolean>();
+
+
+    public KeyInput(Handler handler) {
         this.handler = handler;
     }
 
@@ -15,27 +21,22 @@ public class KeyInput extends KeyAdapter {
     public void keyPressed(KeyEvent e) {
         int key = e.getKeyCode();
 
-        for (int i = 0; i < handler.object.size(); i++){
-            GameObject tempObject = handler.object.get(i);
-            if(tempObject.getId() == ID.Player){
-
-                if(key == KeyEvent.VK_W) {
-                    tempObject.setVelY(-8);
-                }
-                if(key == KeyEvent.VK_A){
-                    tempObject.setVelX(-8);
-                }
-                if(key == KeyEvent.VK_S){
-                    tempObject.setVelY(8);
-                }
-                if(key == KeyEvent.VK_D) {
-                    tempObject.setVelX(8);
-                }
-
-            }
+        if (key == KeyEvent.VK_W) {
+            keysDown.put("W", true);
+        }
+        if (key == KeyEvent.VK_A) {
+            keysDown.put("A", true);
+        }
+        if (key == KeyEvent.VK_S) {
+            keysDown.put("S", true);
+        }
+        if (key == KeyEvent.VK_D) {
+            keysDown.put("D", true);
         }
 
-        if(key == KeyEvent.VK_ESCAPE) System.exit(1);
+        movePlayer();
+
+        if (key == KeyEvent.VK_ESCAPE) System.exit(1);
 
     }
 
@@ -43,22 +44,56 @@ public class KeyInput extends KeyAdapter {
     public void keyReleased(KeyEvent e) {
         int key = e.getKeyCode();
 
-        for (int i = 0; i < handler.object.size(); i++){
-            GameObject tempObject = handler.object.get(i);
-            if(tempObject.getId() == ID.Player) {
+        if (key == KeyEvent.VK_W) {
+            keysDown.put("W", false);
+        }
+        if (key == KeyEvent.VK_A) {
+            keysDown.put("A", false);
+        }
+        if (key == KeyEvent.VK_S) {
+            keysDown.put("S", false);
+        }
+        if (key == KeyEvent.VK_D) {
+            keysDown.put("D", false);
+        }
 
-                if (key == KeyEvent.VK_W) {
-                    tempObject.setVelY(0);
+        movePlayer();
+
+    }
+
+    public void movePlayer(){
+
+        for (GameObject player: handler.object) {
+            if(player.id == ID.Player){
+
+                if((boolean)keysDown.get("W")){
+                    player.setVelY(-8);
                 }
-                if (key == KeyEvent.VK_A) {
-                    tempObject.setVelX(0);
+                else if(!(boolean)keysDown.get("S")){
+                    player.setVelY(0);
                 }
-                if (key == KeyEvent.VK_S) {
-                    tempObject.setVelY(0);
+
+                if((boolean)keysDown.get("S")){
+                    player.setVelY(8);
                 }
-                if (key == KeyEvent.VK_D) {
-                    tempObject.setVelX(0);
+                else if(!(boolean)keysDown.get("W")){
+                    player.setVelY(0);
                 }
+
+                if((boolean)keysDown.get("D")){
+                    player.setVelX(8);
+                }
+                else if(!(boolean)keysDown.get("A")){
+                    player.setVelX(0);
+                }
+
+                if((boolean)keysDown.get("A")){
+                    player.setVelX(-8);
+                }
+                else if(!(boolean)keysDown.get("D")){
+                    player.setVelX(0);
+                }
+
             }
         }
 
