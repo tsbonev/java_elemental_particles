@@ -3,26 +3,25 @@ package com.tsb.main;
 import java.awt.*;
 import java.util.Random;
 
-public class BasicEnemy extends GameObject {
-
+public class FlameBall extends GameObject {
 
     private Handler handler;
 
     Random random = new Random();
 
-    public BasicEnemy(int x, int y, ID id, Handler handler, int velX, int velY){
+    private static int size = 16;
+    private static float standardVelocity = 8;
+
+    private static float life = 0.02f;
+    //private static Color baseColor = new Color( 255, 83, 48); OG color
+    private static Color baseColor = new Color( 255, 84, 45);
+
+    public FlameBall(int x, int y, ID id, Handler handler){
         super(x, y, id);
 
         this.handler = handler;
 
-        this.velX = velX;
-        this.velY = velY;
-
-        /*
-
         int[] playerPos = getPlayerPosition();
-
-        float standardVelocity = 8;
 
         int xPos = 0;
         int yPos = 0;
@@ -50,7 +49,16 @@ public class BasicEnemy extends GameObject {
         velX = xPos * standardVelocity;
         velY = yPos * standardVelocity;
 
-        */
+    }
+
+    public FlameBall(int x, int y, ID id, Handler handler, int velX, int velY){
+
+        super(x, y, id);
+
+        this.handler = handler;
+
+        this.velX = velX;
+        this.velY = velY;
 
     }
 
@@ -83,14 +91,17 @@ public class BasicEnemy extends GameObject {
 
         if(x <= 0 || x >= Game.WIDTH) velX *= -1;
 
-        handler.addObject(new ScatteredTrail(x, y, ID.Trail, handler, new Color( 255, 83, 48),16, 16, 0.02f, true));
+        handler.addObject(new ScatteredTrail(x, y, ID.Trail, handler,
+                baseColor,
+                size, size,
+                life, true));
 
     }
 
     public void render(Graphics g) {
 
-        //g.setColor(new Color(255, 83, 48));
-        //g.fillRect(x, y, 16, 16);
+        //g.setColor(new Color(255, 33, 33));
+        //g.fillRect(x + 8, y + 8, 8, 8);
 
     }
 }

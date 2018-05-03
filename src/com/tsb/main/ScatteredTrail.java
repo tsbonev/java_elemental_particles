@@ -13,6 +13,26 @@ public class ScatteredTrail extends Trail {
     private int height;
     private boolean allowedTrail;
 
+    //region Color, Range, Life
+    private static float headTail = 0.95f;
+    private static Color headColor = new Color(208, 169, 66);
+
+    private static float midTail = 0.93f;
+    private static Color midColor = new Color(255, 157, 75);
+
+    private static float endTail = 0.88f;
+    private static Color endColor = new Color(255, 122, 74);
+
+    private static float smokeTail = 0.85f;
+    private static Color smokeColor = new Color(67, 48, 50);
+
+    private static float trailingTail = 0.70f;
+    private static Color trailingColor = new Color(83, 21, 24);
+    private static float trailingLife = 0.03f;
+
+    private static float getDarker = 0.55f;
+    //endregion
+
     public ScatteredTrail(int x, int y, ID id,
                           Handler handler, Color color,
                           int width, int height,
@@ -28,31 +48,31 @@ public class ScatteredTrail extends Trail {
     @Override
     public void tick(){
 
-        if(alpha < 0.85){
-            this.color = new Color(67, 46, 47).brighter();
+        if(alpha < smokeTail){
+            this.color = smokeColor.brighter();
             this.setVelX(this.getVelX() - 1);
             this.setVelY(this.getVelY() - 1);
         }
-        else if(alpha < 0.90){
-            this.color = new Color(208, 154, 50);
+        else if(alpha < endTail){
+            this.color = endColor;
         }
-        else if(alpha < 0.93){
-            this.color = new Color(255, 157, 75);
+        else if(alpha < midTail){
+            this.color = midColor;
         }
-        else if(alpha < 0.95){
-            this.color = new Color(255, 122, 74);
+        else if(alpha < headTail){
+            this.color = headColor;
         }
 
-        if(alpha < 0.55){
+        if(alpha < getDarker){
             this.color = this.color.darker();
         }
-        if ( alpha < 0.70 && allowedTrail){
+        if ( alpha < trailingTail && allowedTrail){
             allowedTrail = false;
             handler.addObject(new ScatteredTrail(this.x, this.y, this.id,
-                    handler, new Color(83, 21, 24),
+                    handler, trailingColor,
                     width / 4 + random.nextInt(width / 4),
                     height / 4 + random.nextInt(height / 4),
-                    0.03f, false));
+                    trailingLife, false));
         }
 
         super.tick();
