@@ -34,7 +34,17 @@ public class Game extends Canvas implements Runnable {
         hud = new HUD();
 
 
-        handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player, handler));
+        //handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player, handler));
+
+        handler.addObject(new BasicEnemy(100, HEIGHT - 100, ID.BasicEnemy, handler, 8, 0));
+        handler.addObject(new BasicEnemy(100, HEIGHT - 100, ID.BasicEnemy, handler, 7, -1));
+        handler.addObject(new BasicEnemy(100, HEIGHT - 100, ID.BasicEnemy, handler, 6, -2));
+        handler.addObject(new BasicEnemy(100, HEIGHT - 100, ID.BasicEnemy, handler, 5, -3));
+        handler.addObject(new BasicEnemy(100, HEIGHT - 100, ID.BasicEnemy, handler, 4, -4));
+        handler.addObject(new BasicEnemy(100, HEIGHT - 100, ID.BasicEnemy, handler, 3, -5));
+        handler.addObject(new BasicEnemy(100, HEIGHT - 100, ID.BasicEnemy, handler, 2, -6));
+        handler.addObject(new BasicEnemy(100, HEIGHT - 100, ID.BasicEnemy, handler, 1, -7));
+        handler.addObject(new BasicEnemy(100, HEIGHT - 100 , ID.BasicEnemy, handler, 0, -8));
 
     }
 

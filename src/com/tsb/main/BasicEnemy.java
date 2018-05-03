@@ -10,10 +10,15 @@ public class BasicEnemy extends GameObject {
 
     Random random = new Random();
 
-    public BasicEnemy(int x, int y, ID id, Handler handler){
+    public BasicEnemy(int x, int y, ID id, Handler handler, int velX, int velY){
         super(x, y, id);
 
         this.handler = handler;
+
+        this.velX = velX;
+        this.velY = velY;
+
+        /*
 
         int[] playerPos = getPlayerPosition();
 
@@ -44,6 +49,8 @@ public class BasicEnemy extends GameObject {
 
         velX = xPos * standardVelocity;
         velY = yPos * standardVelocity;
+
+        */
 
     }
 
