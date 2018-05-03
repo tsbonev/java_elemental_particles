@@ -87,11 +87,11 @@ public class FlameBall extends GameObject {
         x += velX;
         y += velY;
 
-        if(y <= 0 || y >= Game.HEIGHT) velY *= -1;
+        if(y <= 0 || y >= Game.HEIGHT - size) velY *= -1;
 
-        if(x <= 0 || x >= Game.WIDTH) velX *= -1;
+        if(x <= 0 || x >= Game.WIDTH - size) velX *= -1;
 
-        handler.addObject(new ScatteredTrail(x, y, ID.Trail, handler,
+        handler.addObject(new ScatteredTrail(x - size / 2, y - size / 2, ID.Trail, handler,
                 baseColor,
                 size, size,
                 life, true));
