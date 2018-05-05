@@ -10,7 +10,7 @@ public class FlameBall extends GameObject {
     Random random = new Random();
 
     private static int size = 16;
-    private static float standardVelocity = 8;
+    private static int standardVelocity = 16;
 
     private static float life = 0.02f;
     //private static Color baseColor = new Color( 255, 83, 48); OG color
@@ -43,8 +43,8 @@ public class FlameBall extends GameObject {
         playerPos[0] = Math.abs(playerPos[0]);
         playerPos[1] = Math.abs(playerPos[1]);
 
-        float xMult = x >= y ? 1 : Math.round((float)1 * (float)y / (float)x);
-        float yMult = y >= x ? 1 : Math.round((float)1 * (float)x / (float)y);
+        float xMult = x >= y ? 1 : Math.round(1f * y / x);
+        float yMult = y >= x ? 1 : Math.round(1f * x / y);
 
         velX = xPos * standardVelocity;
         velY = yPos * standardVelocity;
