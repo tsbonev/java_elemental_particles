@@ -11,6 +11,7 @@ public class Game extends Canvas implements Runnable {
     public static final int WIDTH = 1080, HEIGHT = (WIDTH / 12) * 9;
 
     private Thread thread;
+    private Thread thread1;
     private boolean running = false;
 
     private Random r;
@@ -53,6 +54,7 @@ public class Game extends Canvas implements Runnable {
     public synchronized void start(){
 
         thread = new Thread(this);
+        thread1 = new Thread(this);
         thread.start();
         running = true;
 
