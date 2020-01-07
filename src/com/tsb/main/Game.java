@@ -1,7 +1,6 @@
 package com.tsb.main;
 
 import java.awt.*;
-import java.awt.event.KeyListener;
 import java.awt.image.BufferStrategy;
 import java.util.Random;
 
@@ -12,6 +11,7 @@ public class Game extends Canvas implements Runnable {
     public static final int WIDTH = 1080, HEIGHT = (WIDTH / 12) * 9;
 
     private Thread thread;
+    private Thread thread1;
     private boolean running = false;
 
     private Random r;
@@ -34,7 +34,19 @@ public class Game extends Canvas implements Runnable {
         hud = new HUD();
 
 
-        handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player, handler));
+        //handler.addObject(new Player(WIDTH / 2 - 32, HEIGHT / 2 - 32, ID.Player, handler));
+
+        handler.addObject(new FlameBall(WIDTH / 2 - 16, HEIGHT / 2 - 16 , ID.BasicEnemy, handler,
+                8, 8));
+        handler.addObject(new FlameBall(WIDTH / 2 - 16, HEIGHT / 2 - 16 , ID.BasicEnemy, handler,
+                7, 9));
+        handler.addObject(new FlameBall(WIDTH / 2 - 16, HEIGHT / 2 - 16 , ID.BasicEnemy, handler,
+                9, 7));
+        handler.addObject(new FlameBall(WIDTH / 2 - 16, HEIGHT / 2 - 16 , ID.BasicEnemy, handler,
+                6, 10));
+        handler.addObject(new FlameBall(WIDTH / 2 - 16, HEIGHT / 2 - 16 , ID.BasicEnemy, handler,
+                10, 6));
+
 
     }
 
@@ -42,6 +54,7 @@ public class Game extends Canvas implements Runnable {
     public synchronized void start(){
 
         thread = new Thread(this);
+        thread1 = new Thread(this);
         thread.start();
         running = true;
 

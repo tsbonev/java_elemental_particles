@@ -18,9 +18,9 @@ public class MouseInput extends MouseAdapter {
 
             System.out.println(e.getX() + " " + e.getY());
 
-            handler.addObject(
-                    new BasicEnemy(e.getX(), e.getY(), ID.BasicEnemy, handler)
-            );
+           /* handler.addObject(
+                    new FlameBall(e.getX(), e.getY(), ID.FlameBall, handler)
+            );*/
         }
 
     }
